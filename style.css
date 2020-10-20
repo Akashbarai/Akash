@@ -1,0 +1,188 @@
+.loader{
+    width: 100%; height: 100%; background:white; position: fixed;
+    top:0; left:0; z-index: 1000;
+}
+.loader .inner{
+width: 100%; height: 100%;
+background: url(../img/loader.gif) center center no-repeat;
+}
+.overlay{
+    height: 100%; width: 100%; position: absolute;
+    background:rgba(0,0,0,0.5); z-index: 3;
+}
+
+.slides-navigation{
+    z-index: 10;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next{
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+}
+
+.titlemessage{
+    position: absolute; width: 100%; height: 250px; z-index: 5;
+    top: 40%; text-align: center;
+}
+.titlemessage .heading p{
+    color: aliceblue; letter-spacing: 6px; font-weight: 100;
+}
+.titlemessage .heading p.main{
+    font-size: 50px;
+}
+.titlemessage .heading p.sub{
+    font-size: 25px;
+}
+.slides-navigation a.next{
+    right: 20px;
+    background-image: url(../img/icons/next.png);
+}
+.slides-navigation a.prev{
+    left: 20px;
+    background-image: url(../img/icons/prev.png);
+}
+.section{
+    padding: 100px 0;
+}
+
+.skillssection{
+    background: #E74C3C; color: white;
+}
+.skill{
+
+}
+
+.chart{
+    position: relative;width: 152px;height: 152px;display: inline-block;
+}
+.chart canvas{
+    position: absolute;left: 0;top: 0;
+}
+.chart .percent{
+    color: black;font-size: 35px;line-height: 152px;
+}
+.chart .percent:after{
+    content: '%';
+}
+.squareItem{
+    position: relative;
+}
+.squareInnerContainer{
+    border: 2px solid black;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border-top: none;
+}
+.squareInnerContainer:before,
+.squareInnerContainer:after{
+    content: '';
+    border-bottom: 2px solid black;position: absolute;width: 30%;top: 0;
+}
+.squareInnerContainer:before{
+    right: 0;
+}
+.squareInnerContainer:after{
+    left: 0;
+}
+.squareContent h2{ color: red;
+
+}
+.squareIcon{
+    position: absolute;left: 40%;top: -30px; font-size: 45px;
+}
+.submit{
+    background: #E74C3C; text-align: center; color: white;
+}
+.submit button{
+    background-color:#E74C3C;; border: 1px solid white; padding: 10px; margin-top: 10px; color: white;
+}
+
+#navigation{
+    background: #E74C3C; padding: 20px 10px;
+}
+
+#navigation li{
+    padding: 0 10px;
+}
+
+#navigation li a{
+    color: white;
+}
+.navbar-brand{
+    color: white;
+}
+
+.navbar-toggler-icon{
+    background: url("../img/icons/menu.png"); background-size: cover;
+}
+
+.heading{
+    text-align: center; padding-bottom: 40px;
+}
+.filter{
+    text-align: center; width: 100%;
+}
+.filter li{
+    display: inline-block; padding: 5px;
+}
+
+.filter li a{ color: black; border: 1px solid black; padding: 10px 20px;
+
+}
+.filter .current{
+    background:#E74C3C; color: white;
+}
+
+.itemscontainer{
+    width: 100%;
+}
+.items li{
+   display: inline-block;  padding: 5px;
+}
+.items .icons{
+    position: absolute; width: 90px; height: 40px;
+    margin: -20px auto 0 -45px; top:50%; left:50%;
+    text-align: center;
+}
+.items a{
+    background: crimson; color: white ; height: 40px; width: 40px;
+    display: inline-block; position: relative; line-height: 40px;
+    transition: all 0.2s linear,1s;
+}
+
+.items .imgOverlay{
+    height: 100%; width: 100%; background: rgba(0,0,0,0.5);
+    position: absolute; left: 0; top:0; opacity: 0;
+}
+.items .imgOverlay:hover{
+    opacity: 1; transition: all 0.2s linear,1s;
+}
+
+.items .searchButton{
+    float: left; left: -180px;
+}
+.items .projectLink{
+    float: right; right: -180px;
+}
+.items .item{
+    position: relative; overflow: hidden;
+}
+.items .item:hover .searchButton{
+    left: 0;
+}
+.items .item:hover .projectLink{
+    right: 0;
+}
+.items .item:hover img{
+    transform:scale(1.05,1.05);
+    transition: all 0.2s linear,1s;
+}
+.items{
+    padding: 0;
+}
+
+.fotter{
+    padding: 35px; background: black; color: white; text-align: center;
+}
